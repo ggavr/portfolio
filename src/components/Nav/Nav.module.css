@@ -1,0 +1,13 @@
+.nav{
+    /*width: 30vw;*/
+    /*border: 2px solid gray;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.nav a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: larger;
+}

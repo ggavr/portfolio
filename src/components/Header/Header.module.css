@@ -1,0 +1,13 @@
+.header{
+    min-height: 10vh;
+    background-color: #e0f3ff;
+    display: flex;
+    justify-content: end;
+}
+.headerContainer{
+    width: 80%;
+    /*border: 10px solid black;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}

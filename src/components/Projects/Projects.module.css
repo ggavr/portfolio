@@ -1,0 +1,67 @@
+.projectsBlock{
+    background-color: #caa8ff;
+    min-height: 100vh;
+}
+.projectsContainer{
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title{
+    margin-top: 5vh;
+    background-color: #eaeaea;
+}
+.projectBlock{
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project{
+    width: 350px;
+    min-height: 300px;
+    background-color: #e0f3ff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+}
+.projectImg{
+    width: 100%;
+    min-height: 210px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLpKOf6uoXpV08JHG-482EJI9J_j-58u1YiQ&usqp=CAU");
+    background-size: cover;
+    background-position: center ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projectDesc{
+    width: 100%;
+    /*min-height: 40%;*/
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    /*word-break: break-word;*/
+}
+.projectButton{
+    width: 80px;
+    height: 25px;
+    background-color: #caa8ff;
+    opacity: 0.7;
+}
+.projectButton:hover{
+    width: 90px;
+    height: 28px;
+    background-color: #caa8ff;
+    opacity: 0.9;
+
+}
+
+.projectButton a{
+    text-decoration: none;
+    font-weight: bolder;
+}
