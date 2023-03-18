@@ -2,9 +2,10 @@
     width: 80%;
     height: 80%;
     margin: 0 auto;
+    /*padding-top: 2.5vh;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*border: 10px solid red;*/
+    border: 10px solid red;
     flex-wrap: wrap;
 }

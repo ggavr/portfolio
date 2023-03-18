@@ -1,24 +1,17 @@
 .projectsBlock{
     background-color: #caa8ff;
     min-height: 100vh;
+    padding: 100px 0;
+    /*border: 1px solid green;*/
 }
 .projectsContainer{
+
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
 }
-.title{
-    margin-top: 5vh;
-    background-color: #eaeaea;
-}
-.title h2{
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 600;
-    font-size: 2.25rem;
-    --bs-text-opacity: 1;
-    color: rgba(33,37,41,var(--bs-text-opacity))
-}
+
 .projectBlock{
-    margin-top: 10vh;
     width: 100%;
     display: flex;
     gap: 10px;
@@ -31,7 +24,7 @@
     background-color: #e0f3ff;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
 }
 .projectImg{
