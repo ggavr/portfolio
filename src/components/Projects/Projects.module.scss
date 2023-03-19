@@ -1,0 +1,98 @@
+@import "src/common/styles/sass/variables";
+
+.projectsBlock{
+    background-color: $bgColor;
+    min-height: 100vh;
+    padding: 100px 0;
+    .projectsContainer{
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        .projectBlock{
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media screen and (max-width: 930px){
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+
+
+.project{
+    width: 350px;
+    min-height: 300px;
+    background-color: $bgSecondColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .projectImg{
+        width: 100%;
+        min-height: 210px;
+        /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLpKOf6uoXpV08JHG-482EJI9J_j-58u1YiQ&usqp=CAU");*/
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &:hover{
+            &::before{
+                position: absolute;
+                content: 'See more';
+                background-color: black;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0.4;
+            }
+            .projectButton{
+                width: 80px;
+                height: 25px;
+                background-color: $primaryColor;
+                opacity: 0.8;
+                border-radius: 25px;
+                &:hover{
+                    width: 90px;
+                    height: 28px;
+                    background-color: #caa8ff;
+                    opacity: 0.9;
+                }
+                & a{
+                    text-decoration: none;
+                    font-weight: bolder;
+                    color: whitesmoke;
+                }
+            }
+        }
+
+    }
+
+    .projectDesc{
+        width: 100%;
+        padding: 15px 10px;
+        text-align: left;
+        .projectTitle{
+            font-size: 20px;
+            margin: 5px 0 10px 0;
+        }
+    }
+
+}
+
+
+
+
+

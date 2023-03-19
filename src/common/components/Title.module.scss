@@ -1,0 +1,18 @@
+.title{
+    margin: 0 0 30px;
+    /*background-color: #eaeaea;*/
+    font-weight: 400;
+    font-size: 36px;
+    color: #eaeaea;
+    position: relative;
+    &::before{
+        position: absolute;
+        content:'';
+        background: #4e93e6;
+        width: 65px;
+        height: 2px;
+        bottom: -20px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}

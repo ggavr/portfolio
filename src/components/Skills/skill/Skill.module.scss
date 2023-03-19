@@ -1,0 +1,29 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.skillBlock{
+    width: 280px;
+    /*min-height: 240px;*/
+    background-color: $bgColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    .icon{
+        width: 50px;
+        height: 50px;
+        background-color: lightcoral;
+    }
+    .description{
+        //border: 1px solid red;
+        width: 280px;
+        padding: 20px 15px;
+        text-align: left;
+        word-break: break-word;
+
+        @include text('Josefin Sans', 16px, 1.4, $primaryColor);
+    }
+}
+
+
