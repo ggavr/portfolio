@@ -13,7 +13,9 @@
     .icon{
         width: 50px;
         height: 50px;
-        background-color: lightcoral;
+        background-color: $primaryColor;
+        margin-bottom: 10px;
+        @include text('Josefin Sans', 28px, 2.1, $textColor)
     }
     .description{
         //border: 1px solid red;

@@ -1,0 +1,35 @@
+@import "src/common/styles/sass/variables";
+
+.contacts{
+    background-color: $bgSecondColor;
+    //height: 50vh;
+    .contactsContainer{
+        height: 80%;
+        padding: 100px 0;
+
+        /*border: 1px solid black;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .title{
+            //background-color: #eaeaea;
+        }
+
+        .contactsForm{
+            /*border: 1px solid black;*/
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @media screen and (max-width: 707px){
+                    width: 80%;
+            }
+        }
+    }
+}
+
+
+
+
