@@ -1,14 +1,15 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
 .title{
     margin: 0 0 30px;
-    /*background-color: #eaeaea;*/
-    font-weight: 400;
+    font-weight: 300;
     font-size: 36px;
     color: #eaeaea;
     position: relative;
     &::before{
         position: absolute;
         content:'';
-        background: #4e93e6;
+        background: $primaryColor;
         width: 65px;
         height: 2px;
         bottom: -20px;

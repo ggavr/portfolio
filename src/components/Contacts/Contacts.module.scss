@@ -1,31 +1,54 @@
 @import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+@import "src/common/components/button/Button.module.scss";
 
 .contacts{
     background-color: $bgSecondColor;
-    //height: 50vh;
+    padding: 100px 0;
+
     .contactsContainer{
-        height: 80%;
-        padding: 100px 0;
-
-        /*border: 1px solid black;*/
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-
-        .title{
-            //background-color: #eaeaea;
-        }
-
+        @include container();
+        @include flex(column, flex-start, center, nowrap);
         .contactsForm{
-            /*border: 1px solid black;*/
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            @media screen and (max-width: 707px){
-                    width: 80%;
+            @include flex(column, flex-start, stretch, nowrap);
+            width: 540px;
+            margin-top: 60px;
+            @media screen and (max-width: 680px){
+                    width: 100%;
             }
+            .formArea,
+            .messageArea{
+                background: $bgColor;
+                border: 1px solid #4a4a4a;
+                box-sizing: border-box;
+                @include text(inherit, 12px, 1.5, 400);
+                outline: none;
+                color: #4a4a4a;
+                margin-bottom: 1.2rem;
+            }
+        }
+        .formArea{
+            height: calc(1.5em + .75rem + 2px);
+            padding: .4rem 15px;
+            &:focus{
+                border: 1px solid transparent;
+                transition: all 0.4s ease-in-out 0s;
+            }
+        }
+        .messageArea{
+            min-height: 160px;
+            padding: 15px;
+            resize: none;
+            &:focus{
+                border: 1px solid transparent;
+                transition: all 0.4s ease-in-out 0s;
+            }
+        }
+        button[type='submit'] {
+            @extend .btn;
+            align-self: center;
+            background-color: transparent;
+            margin-top: 30px;
         }
     }
 }

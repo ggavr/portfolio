@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './MainPage.module.css'
+import style from './MainPage.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
 export const MainPage = () => {
     return (
