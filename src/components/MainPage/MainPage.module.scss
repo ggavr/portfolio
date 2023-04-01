@@ -2,20 +2,88 @@
 @import '../../common/styles/sass/mixins';
 
 .mainPage{
-    background-color: #fad4fa;
-  height: 90vh;
-}
-.mainPageContainer{
-/*border: 1px solid black;*/
-    display: flex;
+    padding: 100px 0;
+    background-color: $bgColor;
+    position: relative;
+    .particles{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0.3;
+    }
+    .mainPageContainer{
+        @include container();
+        @include flex(row, space-around, center, wrap);
+        .text{
+            @include flex(column, flex-start, flex-start, nowrap);
+            span{
+                font-size: 16px;
+                &:nth-child(2){
+                    @include text('Josefin Sans', 50px, 1.2, 700);
+                    letter-spacing: 5px;
+                    margin: 10px 0;
+                    span{
+                        @include text('Josefin Sans', 50px, 1.2, 700);
+                        letter-spacing: 5px;
+                        position: relative;
+                        z-index: 0;
+                        display: inline-block;
+                        &:before{
+                            position: absolute;
+                            content:'';
+                            background: $primaryColor;
+                            width: 100%;
+                            height: 20px;
+                            bottom: 0;
+                            z-index: -1;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    @include text('Josefin Sans', 28px, 1.8, 400);
+                    margin: 0;
+                }
+            }
+            @media screen and (max-width: 1143px){
+                align-items: center;
+                text-align: center;
+                //flex-wrap: wrap;
+            }
+        }
+        .photo{
+            position: relative;
+            z-index: 1;
+            @media screen and (max-width: 1143px){
+                margin-top: 50px;
+            }
+            .image{
+                height: 400px;
+                width: 300px;
+                @include bgSettings();
+                background-image: url("../../assets/images/pexels-cottonbro-studio-5473950.jpg");
+                background-position: 80% 0;
+                @media screen and (max-width: 600px){
+                    height: 360px;
+                    width: 260px;
+                    transition: .5s;
+                }
+                &:before{
+                    position: absolute;
+                    content:'';
+                    width: 105%;
+                    height: 110%;
+                    border: 5px solid $primaryColor;
+                    left: 15px;
+                    top: -15px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
 }
 
-.text{
-    background-color: #eaeaea;
-    width: 400px;
-}
-.photo{
-    background-color: #eaeaea;
-    width: 300px;
-    height: 400px;
-}
+
+
+

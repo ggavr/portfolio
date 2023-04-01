@@ -1,21 +1,35 @@
 import React from 'react';
 import style from './MainPage.module.scss'
-import styleContainer from '../../common/styles/Container.module.css'
+import ReactTypingEffect from 'react-typing-effect';
 export const MainPage = () => {
+    // const particlesOpt = {
+    //     'particles': {
+    //         'number': {
+    //             'value': 150,
+    //             'density': {
+    //                 'enable': true,
+    //                 'value_area': 800
+    //             }
+    //         }
+    //     }
+    // }
     return (
         <div className={style.mainPage}>
-            <div className={ `${styleContainer.container} ${style.mainPageContainer}` }>
+            {/*<Particles className={style.particles} params={particlesOpt}/>*/}
+            <div className={style.mainPageContainer}>
 
                 <div className={style.text}>
-
                     <span>Hi there</span>
-                    <h1>I am Gavriil Gimervert </h1>
-                    <p>Frontend Developer</p>
-
+                    <span>I am Gavriil<span>Gimervert</span></span>
+                    {/*<h1>Frontend Developer</h1>*/}
+                    <ReactTypingEffect text={'Frontend Developer'}/>
                 </div>
 
-                <div className={style.photo}></div>
+                <div className={style.photo}>
+                    <div className={style.image}>
 
+                    </div>
+                </div>
             </div>
         </div>
     );
