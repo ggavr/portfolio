@@ -10,8 +10,9 @@ export const Projects = () => {
     const divStyleFirst={backgroundImage: `url(${firstImg})`}
     const divStyleSec={backgroundImage: `url(${secondImg})`}
     const divStyleThird={backgroundImage: `url(${thirdImg})`}
+
     return (
-        <div className={style.projectsBlock}>
+        <div id={'projects'} className={style.projectsBlock}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <Title title={'My Projects'}/>
                 <div className={style.projectBlock}>

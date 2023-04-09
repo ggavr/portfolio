@@ -55,6 +55,10 @@
         .photo{
             position: relative;
             z-index: 1;
+            //&:hover{
+            //    transform: scale(1.1,1.1);
+            //    transition: 0.5s;
+            //}
             @media screen and (max-width: 1143px){
                 margin-top: 50px;
             }

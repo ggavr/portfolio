@@ -1,11 +1,13 @@
 import React from 'react';
-import style from './Header.module.css'
+import style from './Header.module.scss'
 import {Nav} from "../Nav/Nav";
+import {BurgerNav} from "../Nav/BurgerNav/BurgerNav";
 
 export const Header = () => {
     return (
         <header className={style.header}>
-         <div className={style.headerContainer}><Nav/></div>
+                <Nav/>
+                <BurgerNav/>
         </header>
     );
 };

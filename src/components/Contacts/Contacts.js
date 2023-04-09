@@ -6,7 +6,7 @@ import {Button} from "../../common/components/button/Button";
 
 export const Contacts = () => {
     return (
-        <div className={style.contacts}>
+        <div id={'contacts'} className={style.contacts}>
             <div className={style.contactsContainer}>
                 <Title title={'Contacts'}/>
 
