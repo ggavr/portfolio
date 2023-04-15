@@ -8,12 +8,12 @@
         justify-content: flex-start;
         .skills{
             margin-top: 20px;
-            width: 100%;
+            max-width: 1024px;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 5px;
-            @media screen and (max-width: 725px){
+            gap: 28px;
+            @media screen and (max-width: 680px){
                     flex-direction: column;
                     align-items: center;
             }
