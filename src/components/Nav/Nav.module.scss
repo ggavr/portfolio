@@ -1,23 +1,27 @@
 @import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
 .nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-     a{
-        text-decoration: none;
-        font-weight: 400;
-        font-size: large;
-        color: #eaeaea;
-        &:hover{
-            color: $primaryColor;
-            font-weight: 600;
-            font-size: larger;
-            cursor:pointer;
-        }
+  width: 340px;
+  @include flex(row, space-between, stretch, nowrap);
+  a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: large;
+    color: $textColor;
+
+    &:hover{
+      color: $primaryColor;
+      font-weight: 600;
+      font-size: larger;
+      cursor:pointer;
     }
-    @media screen and (max-width: 500px){
-        display: none;
-    }
+  }
+  .active{
+    color: $primaryColor;
+  }
+
+  @media screen and (max-width: 500px){
+    display: none;
+  }
 
 }

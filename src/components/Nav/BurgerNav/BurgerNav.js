@@ -7,7 +7,8 @@ export const BurgerNav = () => {
     const onBurgerBtnClick = () => setMenuIsOpen(!menuIsOpen)
     return (
         <div className={style.burgerNav}>
-            <div className={menuIsOpen ? `${style.burgerNavItems}${style.show}` : style.burgerNavItems}>
+            <div onClick={ onBurgerBtnClick }
+                className={menuIsOpen ? `${style.burgerNavItems} ${style.show}` : style.burgerNavItems}>
                 <a href={''}>Home</a>
                 <Link to='skills' smooth={'true'}>Skills</Link>
                 <Link to='projects' smooth={'true'}>My works</Link>
