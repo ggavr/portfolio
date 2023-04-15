@@ -10,11 +10,12 @@ import {ImageSlider, SliderData} from "./common/components/slider/ImageSlider";
 function App() {
     return (
         <div className="App">
-            <ImageSlider slides={SliderData}/>
+
             <Header/>
             <MainPage/>
             <Skills/>
             <Projects/>
+            <ImageSlider slides={SliderData}/>
             <Contacts/>
             <Footer/>
 
