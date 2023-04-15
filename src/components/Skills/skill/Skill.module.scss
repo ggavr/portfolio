@@ -4,7 +4,6 @@
 .skillBlock{
     width: 240px;
     /*min-height: 240px;*/
-    background-color: $bgSecondColor;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,9 +13,9 @@
         width: 50px;
         height: 50px;
         background-color: $primaryColor;
-    text-align: center;
+        text-align: center;
         transform: rotate(45deg);
-        margin: 10px auto;
+        margin: 20px auto;
         @include text('Josefin Sans', 28px, 2.1, $textColor);
         .iconLogo{
             width: 50px;

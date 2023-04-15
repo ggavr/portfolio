@@ -25,10 +25,9 @@ export const Skills = () => {
                     <Skill icon={<FontAwesomeIcon icon={faJs}/>} title={'Java Script'} description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'}/>
                     <Skill icon={<FontAwesomeIcon icon={faReact}/>} title= {'React'} description={'I am description'}/>
                     <Skill icon={<FontAwesomeIcon icon={faT}/>}
-                        title={'Type Script'} description={'I am description'}/>
-
+                           title={'Type Script'} description={'I am description'}/>
                     <Skill icon={<FontAwesomeIcon icon={faR}/>}
-                        title={'Redux'} description={'I am description'}/>
+                           title={'Redux'} description={'I am description'}/>
                 </div>
                 {/*<a><FontAwesomeIcon style={{marginTop:20, fontSize:36, color:"coral"}} icon={faEnvelope}/></a>*/}
             </div>
