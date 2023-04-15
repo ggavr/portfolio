@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Footer.module.scss'
 import {FooterItem} from "./FooterItem";
 import {Title} from "../../common/components/Title";
-import logo from "../../assets/images/pexels-cottonbro-studio-5473950.jpg";
+import gitHubLgo from "../../assets/images/github-svgrepo-com.svg";
 
 export const Footer = () => {
 
@@ -11,7 +11,7 @@ export const Footer = () => {
             <div className={style.footerContainer}>
                 <Title title={'Gavriil Gimervert'}/>
                 <div className={style.footerBlock}>
-                    <FooterItem src={logo}/>
+                    <FooterItem link={'https://github.com/ggavr'} src={gitHubLgo}/>
                     <FooterItem/>
                     <FooterItem/>
                     <FooterItem/>
