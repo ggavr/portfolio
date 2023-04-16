@@ -1,37 +1,36 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
 .slider {
+  padding: 100px 0;
   position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .image {
-    //border: 10px solid red;
-    //width: 240px;
-    //height: 600px;
-    //border-radius: 10px;
-  }
-
   .rightArrow {
     position: absolute;
     top: 50%;
     right: 32px;
     font-size: 3rem;
-    color: #000;
+    color: $primaryColor;
     z-index: 10;
     cursor: pointer;
   }
-
   .leftArrow {
     position: absolute;
     top: 50%;
     left: 32px;
     font-size: 3rem;
-    color: #000;
+    color: $primaryColor;
     z-index: 10;
     cursor: pointer;
   }
+  .imageContainer {
+    @include container();
+    @include flex(column, center, center, nowrap);
+    .skills {
+      @include flex(column, center, center, nowrap);
+      //transform: translate(150px, 0px);
+      //transition: 0.7s;
+    }
+  }
+  @media screen and (min-width: 660px){
+    display: none;
+  }
 }
-
-
-
-

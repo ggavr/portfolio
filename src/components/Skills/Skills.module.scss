@@ -1,11 +1,11 @@
 @import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
 .skillsBlock{
-
-    min-height: 100vh;
+    //min-height: 100vh;
     padding: 100px 0;
     .skillsContainer{
-        flex-direction: column;
-        justify-content: flex-start;
+        @include container();
+        @include flex(column, flex-start, center, nowrap);
         .skills{
             margin-top: 20px;
             max-width: 1024px;
@@ -13,10 +13,9 @@
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 28px;
-            @media screen and (max-width: 680px){
-                    flex-direction: column;
-                    align-items: center;
-            }
         }
+    }
+    @media screen and (max-width: 660px){
+        display: none;
     }
 }

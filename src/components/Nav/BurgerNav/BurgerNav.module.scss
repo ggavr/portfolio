@@ -16,7 +16,7 @@
 
     @include flex(column, center, center, nowrap);
     gap: 20px;
-    transform: translate(350px, 0px);
+    transform: translate(0, -150px);
     transition: 0.7s;
 
     a {

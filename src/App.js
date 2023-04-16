@@ -6,16 +6,18 @@ import {Projects} from "./components/Projects/Projects";
 import {Contacts} from "./components/Contacts/Contacts";
 import {Footer} from "./components/Footer/Footer";
 import {ImageSlider, SliderData} from "./common/components/slider/ImageSlider";
+import {useState} from "react";
 
 function App() {
+    const pageWidth = document.documentElement.scrollWidth
     return (
         <div className="App">
 
             <Header/>
             <MainPage/>
-            <Skills/>
+            {pageWidth> 660 && <Skills slides={SliderData}/>}
+            {pageWidth < 660 && <ImageSlider slides={SliderData}/>}
             <Projects/>
-            <ImageSlider slides={SliderData}/>
             <Contacts/>
             <Footer/>
 
