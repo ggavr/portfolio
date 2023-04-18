@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState} from 'react';
 import style from './BurgerNav.module.scss'
 import {Link} from "react-scroll";
 import burgerIcon from '../../../assets/images/burger.svg'
@@ -8,6 +8,7 @@ import closeOutlineIcon from '../../../assets/images/closeOutline.svg'
 export const BurgerNav = () => {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
     const onBurgerBtnClick = () => setMenuIsOpen(!menuIsOpen)
+
     return (
         <div className={style.burgerNav}>
             <div onClick={ onBurgerBtnClick }

@@ -2,10 +2,10 @@
 @import "src/common/styles/sass/mixins";
 
 .header{
-    background-color: $bgSecondColor;
+    //background-color: $bgSecondColor;
     height: 80px;
     padding: 0 30px;
-    @include flex(row, flex-end, center, nowrap);
+    @include flex(row, space-between, center, nowrap);
     opacity: 0.9;
     position: fixed;
     z-index: 9999;

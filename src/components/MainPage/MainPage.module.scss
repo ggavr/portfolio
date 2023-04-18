@@ -2,8 +2,9 @@
 @import '../../common/styles/sass/mixins';
 
 .mainPage{
+    min-height: 100vh;
     padding: 100px 0;
-    background-color: $bgColor;
+    //background-color: $bgColor;
     position: relative;
     .particles{
         position: absolute;

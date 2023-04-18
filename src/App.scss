@@ -1,12 +1,27 @@
 @import './common/styles/sass/variables.scss';
 
+:root {
+  --col-text: #{$textColor};
+  --bg-color-first:#{$bgColor};
+  --bg-color-second:#{$bgSecondColor};
+}
+
+[data-theme="light"] {
+  --col-text: #{$textDarkColor};
+  --bg-color-first:#{$bgDarkColor};
+  --bg-color-second:#{$bgDarkSecondColor};
+}
+
 .App {
   > div{
+    color: var(--col-text);
+    background-color: var(--bg-color-second);
     &:nth-child(n){
-      background-color: $bgSecondColor;
+      background-color: var(--bg-color-second);
+
     }
     &:nth-child(2n){
-      background-color: $bgColor;
+      background-color: var(--bg-color-first);
     }
   }
   //scroll-behavior: smooth;

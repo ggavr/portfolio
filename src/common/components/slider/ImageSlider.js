@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import style from "./ImageSlider.module.scss";
 
@@ -64,6 +64,7 @@ export const ImageSlider = ({ slides }) => {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
+
 
   return (
       <div className={style.slider}>

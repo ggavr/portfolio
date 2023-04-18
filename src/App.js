@@ -6,17 +6,19 @@ import {Projects} from "./components/Projects/Projects";
 import {Contacts} from "./components/Contacts/Contacts";
 import {Footer} from "./components/Footer/Footer";
 import {ImageSlider, SliderData} from "./common/components/slider/ImageSlider";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 function App() {
     const pageWidth = document.documentElement.scrollWidth
+    const [small, setSmall] = useState(0)
+    useEffect(()=>setSmall(pageWidth), [pageWidth])
     return (
         <div className="App">
 
             <Header/>
             <MainPage/>
-            {pageWidth> 660 && <Skills slides={SliderData}/>}
-            {pageWidth < 660 && <ImageSlider slides={SliderData}/>}
+            {small > 660 && <Skills slides={SliderData}/>}
+            {small < 660 && <ImageSlider slides={SliderData}/>}
             <Projects/>
             <Contacts/>
             <Footer/>
