@@ -18,7 +18,7 @@
             .footerItem{
                 width: 50px;
                 height: 50px;
-                background-color: $bgSecondColor;
+                background-color: var(--bgSecondColor);
                 border-radius: 50%;
                 &:hover{
                     border: 3px solid $primaryColor;

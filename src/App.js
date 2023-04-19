@@ -6,19 +6,18 @@ import {Projects} from "./components/Projects/Projects";
 import {Contacts} from "./components/Contacts/Contacts";
 import {Footer} from "./components/Footer/Footer";
 import {ImageSlider, SliderData} from "./common/components/slider/ImageSlider";
-import {useEffect, useState} from "react";
+import {useListenerScreenWidth} from "./common/components/slider/Dimension";
 
 function App() {
-    const pageWidth = document.documentElement.scrollWidth
-    const [small, setSmall] = useState(0)
-    useEffect(()=>setSmall(pageWidth), [pageWidth])
+
+    const breakpointMobile = useListenerScreenWidth()
     return (
         <div className="App">
 
             <Header/>
             <MainPage/>
-            {small > 660 && <Skills slides={SliderData}/>}
-            {small < 660 && <ImageSlider slides={SliderData}/>}
+            {!breakpointMobile && <Skills slides={SliderData}/>}
+            {breakpointMobile && <ImageSlider slides={SliderData}/>}
             <Projects/>
             <Contacts/>
             <Footer/>

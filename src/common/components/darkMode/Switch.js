@@ -8,11 +8,12 @@ export const Switch = () => {
     }, [theme]);
     return (
         <div className={style.containerSwitch}>
-            <span>Change Theme </span>
+            <span>Theme </span>
             <label className={style.switch}>
                 <input type='checkbox'
                        onChange={handleChange}
-                       checked={theme === 'dark'}/>
+                       checked={theme === 'dark'}
+                />
                 <span className={style.slider}></span>
             </label>
         </div>

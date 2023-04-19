@@ -30,7 +30,7 @@
 .project{
     width: 350px;
     min-height: 300px;
-    background-color: $bgSecondColor;
+    background-color: var(--bgSecondColor);
     display: flex;
     flex-direction: column;
     align-items: center;

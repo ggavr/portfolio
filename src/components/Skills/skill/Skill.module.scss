@@ -37,7 +37,7 @@
         text-align: center;
         word-break: break-word;
 
-        @include text('Josefin Sans', 16px, 1.4, $primaryColor);
+        @include text('Josefin Sans', 16px, 1.4, var(--textColor));
     }
 }
 
