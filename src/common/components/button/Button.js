@@ -3,6 +3,6 @@ import style from './Button.module.scss'
 
 export const Button = (props) => {
     return (
-        <a href='' className={style.btn}>{props.text}</a>
+        <a href={props.link} target='_blank' className={style.btn}>{props.text}</a>
     )
 }

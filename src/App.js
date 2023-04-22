@@ -5,8 +5,9 @@ import {Skills} from "./components/Skills/Skills";
 import {Projects} from "./components/Projects/Projects";
 import {Contacts} from "./components/Contacts/Contacts";
 import {Footer} from "./components/Footer/Footer";
-import {ImageSlider, SliderData} from "./common/components/slider/ImageSlider";
+import {ImageSlider} from "./common/components/slider/ImageSlider";
 import {useListenerScreenWidth} from "./common/components/slider/Dimension";
+import {projectData, SliderData} from "./assets/data";
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
             <MainPage/>
             {!breakpointMobile && <Skills slides={SliderData}/>}
             {breakpointMobile && <ImageSlider slides={SliderData}/>}
-            <Projects/>
+            <Projects slides={projectData}/>
             <Contacts/>
             <Footer/>
 
