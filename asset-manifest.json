@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e23e326f.css",
-    "main.js": "/portfolio/static/js/main.8ccc3ff3.js",
+    "main.css": "/portfolio/static/css/main.db94770b.css",
+    "main.js": "/portfolio/static/js/main.54102987.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/pexels-christina-morillo-1181271.jpg": "/portfolio/static/media/pexels-christina-morillo-1181271.4dcfcc35e2d38f7fab70.jpg",
     "static/media/pexels-cottonbro-studio-5473950.jpg": "/portfolio/static/media/pexels-cottonbro-studio-5473950.5da5e9ab36f35cf876a9.jpg",
     "static/media/projectOne.webp": "/portfolio/static/media/projectOne.a14f08688ae481a55ce7.webp",
     "static/media/secondImg.webp": "/portfolio/static/media/secondImg.84b1b50d7c8321caa3b6.webp",
@@ -14,12 +13,12 @@
     "index.html": "/portfolio/index.html",
     "static/media/telegram-svgrepo-com.svg": "/portfolio/static/media/telegram-svgrepo-com.2d8132368c4d4f790360923acfa74572.svg",
     "static/media/burger.svg": "/portfolio/static/media/burger.4fb668b997ed3cf68955deda6de7dacf.svg",
-    "main.e23e326f.css.map": "/portfolio/static/css/main.e23e326f.css.map",
-    "main.8ccc3ff3.js.map": "/portfolio/static/js/main.8ccc3ff3.js.map",
+    "main.db94770b.css.map": "/portfolio/static/css/main.db94770b.css.map",
+    "main.54102987.js.map": "/portfolio/static/js/main.54102987.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e23e326f.css",
-    "static/js/main.8ccc3ff3.js"
+    "static/css/main.db94770b.css",
+    "static/js/main.54102987.js"
   ]
 }
