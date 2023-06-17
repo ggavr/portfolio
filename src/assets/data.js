@@ -1,7 +1,7 @@
 import {faCss3Alt, faHtml5, faJs, faReact} from "@fortawesome/free-brands-svg-icons";
 import {faR, faT} from "@fortawesome/free-solid-svg-icons";
-import firstImg from "./images/projectOne.webp";
-import secondImg from "./images/secondImg.webp";
+import firstImg from "./images/project1.webp";
+import secondImg from "./images/project3.webp";
 
 export const SliderData = [
     {
